@@ -298,13 +298,9 @@ barChart.run = function()
 
 	var svg = barChart.appendSvg("#mainDiv");
 	var cht = barChart.appendChartGroup(svg);
-    //barChart.createAxis(svg,data);
-    barChart.tickFormat(svg, data);
-    //barChart.addBrush(cht);
+    barChart.createAxis(svg,data);
     
     d3.interval(function() {barChart.appendRect(cht,data,-1);}, 1500);
-
-    //barChart.addZoom(svg);
     barChart.addLegend(svg);
     barChart.addAxisLabel(svg);
     

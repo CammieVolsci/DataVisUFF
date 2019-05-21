@@ -1,0 +1,15 @@
+#mainDiv
+{
+    font-family: serif;
+    font-size: 12px;
+    text-align: left;
+    padding: 3px;
+    margin: 1px;
+    color: white;
+}
+
+.zoom
+{
+    fill: none;
+    pointer-events: all;
+}
